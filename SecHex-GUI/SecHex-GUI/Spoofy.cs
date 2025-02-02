@@ -1019,7 +1019,8 @@ namespace SecHex_GUI
             }
             else
             {
-                ShowNotification(Encoding.UTF8.GetString(Convert.FromBase64String("QWxsIHJlZ2lzdHJ5IGVudHJpZXMgZXhpc3Qu")), NotificationType.Success);
+                //ShowNotification(Encoding.UTF8.GetString(Convert.FromBase64String("QWxsIHJlZ2lzdHJ5IGVudHJpZXMgZXhpc3Qu")), NotificationType.Success);
+                ShowNotification("System is Compatible", NotificationType.Success);
             }
         }
 
@@ -1058,10 +1059,10 @@ namespace SecHex_GUI
 
             label1.Text = message;
 
-            Color startColor = Color.Magenta;
+            Color startColor = Color.Purple;
             Color targetColor = Color.FromArgb(255, 16, 16, 17);
 
-            await ChangeColor(label1, startColor, targetColor, 300);
+            await ChangeColor(label1, startColor, targetColor, 500);
 
             label1.Text = originalMessage;
             label1.ForeColor = originalColor;
@@ -1160,11 +1161,11 @@ namespace SecHex_GUI
 
             if (checkBox.Checked)
             {
-                AnimateButtonsBorderColor(disk, winid, disk, efi, HwProfile, spoofall, mac, display, pcname, backup, product, req, sm, BIOSReleaseDate, MachineId);
+                AnimateButtonsBorderColor(spoofall, backup, req);
             }
             else
             {
-                StopButtonAnimation(disk, winid, disk, efi, HwProfile, spoofall, mac, display, pcname, backup, product, req, sm, BIOSReleaseDate, MachineId);
+                StopButtonAnimation(spoofall, backup, req);
             }
         }
 

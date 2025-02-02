@@ -825,14 +825,14 @@ namespace SecHex_GUI
 
         // Unlink Functions
 
-        private void unlinkxbox_CheckedChanged(object sender, EventArgs e)
-        {
-            isXboxChecked = unlinkxbox.Checked;
-        }
-        private void unlinkdc_CheckedChanged(object sender, EventArgs e)
-        {
-            isDiscordChecked = unlinkdc.Checked;
-        }
+        //private void unlinkxbox_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    isXboxChecked = unlinkxbox.Checked;
+        //}
+        //private void unlinkdc_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    isDiscordChecked = unlinkdc.Checked;
+        //}
 
 
         private void spoofall_Click(object sender, EventArgs e)

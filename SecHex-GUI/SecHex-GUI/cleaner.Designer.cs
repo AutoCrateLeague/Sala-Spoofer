@@ -46,9 +46,6 @@
             fivemm = new MetroFramework.Controls.MetroCheckBox();
             valorant = new MetroFramework.Controls.MetroCheckBox();
             antishittracer = new MetroFramework.Controls.MetroCheckBox();
-            metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            unlinkxbox = new MetroFramework.Controls.MetroCheckBox();
-            unlinkdc = new MetroFramework.Controls.MetroCheckBox();
             SuspendLayout();
             // 
             // spoofall
@@ -57,9 +54,13 @@
             spoofall.AutoRoundedCorners = true;
             spoofall.BackColor = Color.Transparent;
             spoofall.BorderColor = Color.White;
-            spoofall.BorderRadius = 15;
+            spoofall.BorderRadius = 19;
             spoofall.BorderThickness = 1;
             spoofall.CustomBorderColor = Color.Transparent;
+            spoofall.CustomizableEdges.BottomLeft = false;
+            spoofall.CustomizableEdges.BottomRight = false;
+            spoofall.CustomizableEdges.TopLeft = false;
+            spoofall.CustomizableEdges.TopRight = false;
             spoofall.DisabledState.BorderColor = Color.DarkGray;
             spoofall.DisabledState.CustomBorderColor = Color.DarkGray;
             spoofall.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -67,10 +68,11 @@
             spoofall.FillColor = Color.Transparent;
             spoofall.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             spoofall.ForeColor = Color.White;
-            spoofall.Location = new Point(21, 307);
+            spoofall.Location = new Point(24, 389);
+            spoofall.Margin = new Padding(3, 4, 3, 4);
             spoofall.Name = "spoofall";
             spoofall.PressedDepth = 60;
-            spoofall.Size = new Size(496, 32);
+            spoofall.Size = new Size(567, 41);
             spoofall.TabIndex = 18;
             spoofall.Text = "Start Cleaning";
             spoofall.Click += spoofall_Click;
@@ -78,7 +80,8 @@
             // dnsflush
             // 
             dnsflush.AutoSize = true;
-            dnsflush.Location = new Point(26, 87);
+            dnsflush.Location = new Point(400, 286);
+            dnsflush.Margin = new Padding(3, 4, 3, 4);
             dnsflush.Name = "dnsflush";
             dnsflush.Size = new Size(74, 15);
             dnsflush.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -91,7 +94,8 @@
             // windowslogs
             // 
             windowslogs.AutoSize = true;
-            windowslogs.Location = new Point(184, 129);
+            windowslogs.Location = new Point(34, 176);
+            windowslogs.Margin = new Padding(3, 4, 3, 4);
             windowslogs.Name = "windowslogs";
             windowslogs.Size = new Size(100, 15);
             windowslogs.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -104,7 +108,8 @@
             // tempfi
             // 
             tempfi.AutoSize = true;
-            tempfi.Location = new Point(184, 87);
+            tempfi.Location = new Point(34, 123);
+            tempfi.Margin = new Padding(3, 4, 3, 4);
             tempfi.Name = "tempfi";
             tempfi.Size = new Size(105, 15);
             tempfi.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -117,7 +122,8 @@
             // wintempp
             // 
             wintempp.AutoSize = true;
-            wintempp.Location = new Point(184, 108);
+            wintempp.Location = new Point(34, 149);
+            wintempp.Margin = new Padding(3, 4, 3, 4);
             wintempp.Name = "wintempp";
             wintempp.Size = new Size(140, 15);
             wintempp.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -130,7 +136,8 @@
             // tcpp
             // 
             tcpp.AutoSize = true;
-            tcpp.Location = new Point(26, 108);
+            tcpp.Location = new Point(400, 313);
+            tcpp.Margin = new Padding(3, 4, 3, 4);
             tcpp.Name = "tcpp";
             tcpp.Size = new Size(74, 15);
             tcpp.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -143,7 +150,7 @@
             // metroLabel1
             // 
             metroLabel1.AutoSize = true;
-            metroLabel1.Location = new Point(21, 60);
+            metroLabel1.Location = new Point(394, 252);
             metroLabel1.Name = "metroLabel1";
             metroLabel1.Size = new Size(112, 19);
             metroLabel1.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -154,7 +161,8 @@
             // wifireset
             // 
             wifireset.AutoSize = true;
-            wifireset.Location = new Point(26, 129);
+            wifireset.Location = new Point(400, 339);
+            wifireset.Margin = new Padding(3, 4, 3, 4);
             wifireset.Name = "wifireset";
             wifireset.Size = new Size(99, 15);
             wifireset.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -167,7 +175,7 @@
             // metroLabel2
             // 
             metroLabel2.AutoSize = true;
-            metroLabel2.Location = new Point(180, 60);
+            metroLabel2.Location = new Point(30, 89);
             metroLabel2.Name = "metroLabel2";
             metroLabel2.Size = new Size(109, 19);
             metroLabel2.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -178,7 +186,7 @@
             // metroLabel3
             // 
             metroLabel3.AutoSize = true;
-            metroLabel3.Location = new Point(340, 60);
+            metroLabel3.Location = new Point(389, 89);
             metroLabel3.Name = "metroLabel3";
             metroLabel3.Size = new Size(198, 19);
             metroLabel3.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -189,7 +197,8 @@
             // chromecookies
             // 
             chromecookies.AutoSize = true;
-            chromecookies.Location = new Point(345, 87);
+            chromecookies.Location = new Point(394, 123);
+            chromecookies.Margin = new Padding(3, 4, 3, 4);
             chromecookies.Name = "chromecookies";
             chromecookies.Size = new Size(111, 15);
             chromecookies.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -202,7 +211,8 @@
             // firefoxcookies
             // 
             firefoxcookies.AutoSize = true;
-            firefoxcookies.Location = new Point(345, 108);
+            firefoxcookies.Location = new Point(394, 149);
+            firefoxcookies.Margin = new Padding(3, 4, 3, 4);
             firefoxcookies.Name = "firefoxcookies";
             firefoxcookies.Size = new Size(104, 15);
             firefoxcookies.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -215,7 +225,7 @@
             // metroLabel4
             // 
             metroLabel4.AutoSize = true;
-            metroLabel4.Location = new Point(21, 199);
+            metroLabel4.Location = new Point(24, 252);
             metroLabel4.Name = "metroLabel4";
             metroLabel4.Size = new Size(214, 19);
             metroLabel4.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -226,7 +236,8 @@
             // fortnite
             // 
             fortnite.AutoSize = true;
-            fortnite.Location = new Point(26, 225);
+            fortnite.Location = new Point(30, 285);
+            fortnite.Margin = new Padding(3, 4, 3, 4);
             fortnite.Name = "fortnite";
             fortnite.Size = new Size(67, 15);
             fortnite.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -239,7 +250,8 @@
             // fivemm
             // 
             fivemm.AutoSize = true;
-            fivemm.Location = new Point(26, 246);
+            fivemm.Location = new Point(30, 312);
+            fivemm.Margin = new Padding(3, 4, 3, 4);
             fivemm.Name = "fivemm";
             fivemm.Size = new Size(55, 15);
             fivemm.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -252,7 +264,8 @@
             // valorant
             // 
             valorant.AutoSize = true;
-            valorant.Location = new Point(26, 267);
+            valorant.Location = new Point(30, 338);
+            valorant.Margin = new Padding(3, 4, 3, 4);
             valorant.Name = "valorant";
             valorant.Size = new Size(66, 15);
             valorant.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -265,7 +278,8 @@
             // antishittracer
             // 
             antishittracer.AutoSize = true;
-            antishittracer.Location = new Point(99, 225);
+            antishittracer.Location = new Point(113, 285);
+            antishittracer.Margin = new Padding(3, 4, 3, 4);
             antishittracer.Name = "antishittracer";
             antishittracer.Size = new Size(115, 15);
             antishittracer.Style = MetroFramework.MetroColorStyle.Magenta;
@@ -275,52 +289,12 @@
             antishittracer.UseVisualStyleBackColor = true;
             antishittracer.CheckedChanged += antishittracer_CheckedChanged;
             // 
-            // metroLabel5
-            // 
-            metroLabel5.AutoSize = true;
-            metroLabel5.Location = new Point(340, 199);
-            metroLabel5.Name = "metroLabel5";
-            metroLabel5.Size = new Size(181, 19);
-            metroLabel5.Style = MetroFramework.MetroColorStyle.Magenta;
-            metroLabel5.TabIndex = 43;
-            metroLabel5.Text = "UNLINK FUNCTIONS (testing)";
-            metroLabel5.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // unlinkxbox
-            // 
-            unlinkxbox.AutoSize = true;
-            unlinkxbox.Location = new Point(345, 225);
-            unlinkxbox.Name = "unlinkxbox";
-            unlinkxbox.Size = new Size(87, 15);
-            unlinkxbox.Style = MetroFramework.MetroColorStyle.Magenta;
-            unlinkxbox.TabIndex = 44;
-            unlinkxbox.Text = "Unlink Xbox";
-            unlinkxbox.Theme = MetroFramework.MetroThemeStyle.Dark;
-            unlinkxbox.UseVisualStyleBackColor = true;
-            unlinkxbox.CheckedChanged += unlinkxbox_CheckedChanged;
-            // 
-            // unlinkdc
-            // 
-            unlinkdc.AutoSize = true;
-            unlinkdc.Location = new Point(345, 246);
-            unlinkdc.Name = "unlinkdc";
-            unlinkdc.Size = new Size(100, 15);
-            unlinkdc.Style = MetroFramework.MetroColorStyle.Magenta;
-            unlinkdc.TabIndex = 45;
-            unlinkdc.Text = "Unlink Discord";
-            unlinkdc.Theme = MetroFramework.MetroThemeStyle.Dark;
-            unlinkdc.UseVisualStyleBackColor = true;
-            unlinkdc.CheckedChanged += unlinkdc_CheckedChanged;
-            // 
             // south_africa
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(17, 17, 17);
-            ClientSize = new Size(572, 352);
-            Controls.Add(unlinkdc);
-            Controls.Add(unlinkxbox);
-            Controls.Add(metroLabel5);
+            ClientSize = new Size(654, 446);
             Controls.Add(antishittracer);
             Controls.Add(valorant);
             Controls.Add(fivemm);
@@ -338,12 +312,16 @@
             Controls.Add(windowslogs);
             Controls.Add(dnsflush);
             Controls.Add(spoofall);
+            Font = new Font("Segoe Script", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "south_africa";
+            Padding = new Padding(23, 76, 23, 25);
             Resizable = false;
-            ShadowType = MetroFormShadowType.DropShadow;
-            Style = MetroFramework.MetroColorStyle.Magenta;
-            Text = "SecHex - Cleaner";
+            //ShadowType = MetroFormShadowType.DropShadow;
+            Style = MetroFramework.MetroColorStyle.Purple;
+            Text = "SPOOFIE";
+            //TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
             Theme = MetroFramework.MetroThemeStyle.Dark;
             Load += south_africa_Load;
             ResumeLayout(false);
@@ -368,8 +346,5 @@
         private MetroFramework.Controls.MetroCheckBox fivemm;
         private MetroFramework.Controls.MetroCheckBox valorant;
         private MetroFramework.Controls.MetroCheckBox antishittracer;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroCheckBox unlinkxbox;
-        private MetroFramework.Controls.MetroCheckBox unlinkdc;
     }
 }
